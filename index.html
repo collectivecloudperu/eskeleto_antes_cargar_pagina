@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Mostrar un Esqueleto antes de Cargar el contenido de una Web </title>
+  
+
+  
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/starter-template.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Mi Proyecto</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://collectivecloudperu.com/blogdevs/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nosotros</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Misión</a>
+              <a class="dropdown-item" href="#">Prensa</a>
+              <a class="dropdown-item" href="#">Visión</a>              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+        </ul> 
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar" required>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </nav>
+
+  <div class="container">
+
+    <div class="starter-template">
+
+      <div class="row">
+
+
+
+        <div class="col-md-3">
+    
+          <div class="elemento_left">
+            <div class="elemento__image_left"><img src="http://unsplash.it/400/400?image=365" class="ipc js-image_left oymc" alt=""/></div>
+            <div class="elemento__content_left">
+              <div class="elemento__image_left_h1 lbg"><h1 class="ipc oymc"> Header </h1> </div>
+              <div class="elemento__image_left_p lbg">
+                <p class="ipc oymc">
+                  Nam nec ipsum id mauris dictum sollicitudin. Nam id lectus lectus. Donec eu lacus dictum, scelerisque purus sed, pharetra ex. Vestibulum eget vehicula tortor, non cursus lectus. Aenean ut est fermentum, tincidunt massa quis, mattis sapien. Mauris auctor sit amet sapien et vehicula. Integer rutrum lacus dolor, non auctor velit hendrerit non.
+                </p> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <form>
+    
+            <div class="elemento-center">
+              <div class="elemento__content_center">
+                <div class="elemento__image_center_textarea">
+                  <textarea rows="3" cols="60" class="ipc js-image_center_textarea oymc" required></textarea>
+                </div>
+                <p class="elemento__boton_center js-boton_center">
+                  <button type="submit" class="ipc js-image_center_boton oymc"> Publicar </button>
+                </p>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+
+
+        <div class="col-md-3">
+    
+          <div class="elemento_right">
+            <div class="elemento__image_right"><img src="http://unsplash.it/400/400?image=221" class="ipc js-image_right oymc" alt=""/></div>
+            <div class="elemento__content_right">
+              <div class="elemento__image_right_h1 lbg"><h1 class="ipc oymc"> Header </h1> </div>
+              <div class="elemento__image_right_p lbg">
+                <p class="ipc oymc">
+                Nam nec ipsum id mauris dictum sollicitudin. Nam id lectus lectus. Donec eu lacus dictum, scelerisque purus sed, pharetra ex. Vestibulum eget vehicula tortor, non cursus lectus. Aenean ut est fermentum, tincidunt massa quis, mattis sapien. Mauris auctor sit amet sapien et vehicula. Integer rutrum lacus dolor, non auctor velit hendrerit non.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+  </div> 
+
+
+  <section class="credito">
+      <div align="center">
+          Desarrollado por <a href="http://www.collectivecloudperu.com" target="_blank">Collective Cloud Perú</a>
+      </div> 
+  </section>
+
+
+    <!-- JS -->  
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+         var $rows1 = $(".ipc");
+         var $rows2 = $(".elemento__image_left_h1, .elemento__image_left_p, .elemento__image_right_h1, .elemento__image_right_p, .elemento__image_center_textarea, .elemento__boton_center");
+
+         setTimeout(function() {
+             $rows1.removeClass("oymc");
+             $rows1.addClass("mc");
+
+             $rows2.removeClass(".elemento__image_left_h1 .elemento__image_left_p .elemento__image_right_h1 .elemento__image_right_p .elemento__image_center_textarea .elemento__boton_center");
+             $rows2.addClass("pnbg")
+
+         }, 4400);
+      });    
+    </script>
+
+</body>
+</html>
