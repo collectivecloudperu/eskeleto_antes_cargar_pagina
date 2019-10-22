@@ -1,2 +1,3 @@
-# Esqueleto antes de Cargar el contenido de una Web
-Con Puro CSS creamos el efecto de Mostrar un Esqueleto antes de Cargar el contenido de una Web.
+# Mostrar un Esqueleto antes de Cargar el contenido de una Web
+
+Post: http://blog.nubecolectiva.com/mostrar-un-esqueleto-antes-de-cargar-el-contenido-de-una-web/ 
